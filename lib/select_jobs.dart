@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class SelectJobs extends StatefulWidget {
-  // const SelectJobs({ Key? key }) : super(key: key);
 
   @override
   _SelectJobsState createState() => _SelectJobsState();
@@ -78,11 +77,8 @@ class _SelectJobsState extends State<SelectJobs> {
                     child: Padding(
                       padding: EdgeInsets.all(12),
                       child: Column(
-                        // mainAxisAlignment: MainAxisAlignment.center,
-                        // crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Row(
-                            // mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               Padding(
                                   padding: EdgeInsets.fromLTRB(

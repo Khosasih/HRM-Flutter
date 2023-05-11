@@ -6,7 +6,6 @@ import 'package:talent_app/register/board.dart';
 import 'package:talent_app/register/welcome.dart';
 
 class SplashScreen extends StatefulWidget {
-  // const SplashScreen({ Key? key }) : super(key: key);
   @override
   State<StatefulWidget> createState() => InitState();
 }
@@ -14,7 +13,6 @@ class SplashScreen extends StatefulWidget {
 class InitState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     startTimer();
   }

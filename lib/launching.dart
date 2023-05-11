@@ -5,7 +5,6 @@ import 'package:talent_app/user/profile.dart';
 import 'package:talent_app/user/user_profile.dart';
 
 class Launch extends StatefulWidget {
-  // const Launch({ Key? key }) : super(key: key);
 
   @override
   _LaunchState createState() => _LaunchState();

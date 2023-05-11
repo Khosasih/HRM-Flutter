@@ -1,16 +1,12 @@
-// import 'dart:html';
+
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
-// import 'package:google_fonts/google_fonts.dart';
-// import 'package:talent_app/styles/icon.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class Mapsjobshelp extends StatefulWidget {
-  // const Mapsjobshelp({Key? key}) : super(key: key);
 
   @override
   _MapsjobshelpState createState() => _MapsjobshelpState();
@@ -19,19 +15,8 @@ class Mapsjobshelp extends StatefulWidget {
 class _MapsjobshelpState extends State<Mapsjobshelp> {
   bool valServiceWalter = true;
 
-  //marker google maps
   final Set<Marker> _markers = {};
   final LatLng _currentPosition = LatLng(-6.209325, 106.819555);
-
-  // @override
-  // void initState() {
-  //   _markers.add(Marker(
-  //     markerId: MarkerId("-6.209325, 106.819555"),
-  //     position: _currentPosition,
-  //     icon: BitmapDescriptor.defaultMarker,
-  //   ));
-  //   super.initState();
-  // }
   void _onMapCreated(GoogleMapController controller) {
     setState(() {
       _markers.add(
@@ -40,7 +25,6 @@ class _MapsjobshelpState extends State<Mapsjobshelp> {
             position: _currentPosition,
             infoWindow: InfoWindow(
               title: 'You Are Here',
-              // snippet: 'Tes',
             )),
       );
     });
@@ -64,8 +48,7 @@ class _MapsjobshelpState extends State<Mapsjobshelp> {
           child: Container(
             margin: EdgeInsets.fromLTRB(0, 46, 0, 15),
             child: Stack(
-              children: [
-                // Positioned(
+              children: [                
                 Container(
                   child: GoogleMap(
                     mapType: MapType.normal,
@@ -87,12 +70,10 @@ class _MapsjobshelpState extends State<Mapsjobshelp> {
                     },
                   ),
                 ),
-                // ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Positioned(
-                      // top: 100,
                       child: Container(height: 300, child: buildCardTop()),
                     ),
                   ],
@@ -111,8 +92,6 @@ class _MapsjobshelpState extends State<Mapsjobshelp> {
       child: Padding(
         padding: EdgeInsets.all(12),
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          // crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Row(
               children: [

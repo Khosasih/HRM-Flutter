@@ -4,12 +4,8 @@ import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
 import 'package:talent_app/tabs_jobs_maps.dart';
-// import 'package:google_fonts/google_fonts.dart';
-// import 'package:talent_app/styles/icon.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
 
 class TotalServiceProvider extends StatefulWidget {
-  // const TotalServiceProvider({Key? key}) : super(key: key);
 
   @override
   _TotalServiceProviderState createState() => _TotalServiceProviderState();

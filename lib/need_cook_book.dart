@@ -4,7 +4,6 @@ import 'package:talent_app/user/user_profile.dart';
 import 'menu/menu.dart';
 
 class CookBook extends StatefulWidget {
-  // const CookBook({ Key? key }) : super(key: key);
 
   @override
   _CookBookState createState() => _CookBookState();

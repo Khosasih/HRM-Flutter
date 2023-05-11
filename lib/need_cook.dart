@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:talent_app/menu/menu.dart';
 
 class Cook extends StatefulWidget {
-  // const Cook({ Key? key }) : super(key: key);
 
   @override
   _CookState createState() => _CookState();

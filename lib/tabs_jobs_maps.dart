@@ -4,13 +4,9 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
-// import 'package:google_fonts/google_fonts.dart';
-// import 'package:talent_app/styles/icon.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class TotalServiceProvider2 extends StatefulWidget {
-  // const TotalServiceProvider2({Key? key}) : super(key: key);
 
   @override
   _TotalServiceProvider2State createState() => _TotalServiceProvider2State();
@@ -19,19 +15,8 @@ class TotalServiceProvider2 extends StatefulWidget {
 class _TotalServiceProvider2State extends State<TotalServiceProvider2> {
   bool valServiceWalter = true;
 
-  //marker google maps
   final Set<Marker> _markers = {};
   final LatLng _currentPosition = LatLng(-6.209325, 106.819555);
-
-  // @override
-  // void initState() {
-  //   _markers.add(Marker(
-  //     markerId: MarkerId("-6.209325, 106.819555"),
-  //     position: _currentPosition,
-  //     icon: BitmapDescriptor.defaultMarker,
-  //   ));
-  //   super.initState();
-  // }
   void _onMapCreated(GoogleMapController controller) {
     setState(() {
       _markers.add(
@@ -40,7 +25,6 @@ class _TotalServiceProvider2State extends State<TotalServiceProvider2> {
             position: _currentPosition,
             infoWindow: InfoWindow(
               title: 'You Are Here',
-              // snippet: 'Tes',
             )),
       );
     });
@@ -53,7 +37,6 @@ class _TotalServiceProvider2State extends State<TotalServiceProvider2> {
       backgroundColor: Colors.white,
       body: Container(
         height: 760,
-        // padding: EdgeInsets.only(bottom: 50),
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/bg_myjob.png'),
@@ -65,7 +48,6 @@ class _TotalServiceProvider2State extends State<TotalServiceProvider2> {
             margin: EdgeInsets.fromLTRB(0, 46, 0, 15),
             child: Stack(
               children: [
-                // Positioned(
                 Container(
                   child: GoogleMap(
                     mapType: MapType.normal,
@@ -87,12 +69,10 @@ class _TotalServiceProvider2State extends State<TotalServiceProvider2> {
                     },
                   ),
                 ),
-                // ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Positioned(
-                      // top: 100,
+                    Positioned(                      
                       child: Container(height: 280, child: buildCardTop()),
                     ),
                   ],

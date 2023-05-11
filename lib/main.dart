@@ -33,14 +33,6 @@ class MyApp extends StatelessWidget {
       title: "sign Up",
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
-      // home: SignUp(),
-      // home: CookBook(),
-      // home: SelectJobs(),
-      // home: Notifikasi(),
-      // home: Forget(),
-      // home: Profile(),
-      // home: UserProfile(),
-      // home: Filt
     );
   }
 }
